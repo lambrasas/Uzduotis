@@ -9,10 +9,37 @@
   <link rel="stylesheet" href="app/css/style.css">
 </head>
 <body>
+  <div class="top">
 
-  <button onclick="changeTab(event, 'pirmas')">Muzika</button>
-  <button onclick="changeTab(event, 'antras')">Antras</button>
-  <button onclick="changeTab(event, 'trecias')">Trecias</button>
+    <h1>Sveiki!</h1>
+    <p>Mano vardas yra Linas, ir man labai patinka strateginiai žaidimai.</p>
+    <p>Tam yra kelios priežastys. Norint sužinoti, kodėl man taip patinka strateginiai žaidimai, paspauskite ant mygtukų.</p>
+    
+    <div class="buttons">
+      <button class="selected" onclick="changeTab(event, 'pirmas')">Nuo 0 iki 100</button>
+      <button onclick="changeTab(event, 'antras')">Neribotos galimybės</button>
+      <button onclick="changeTab(event, 'trecias')">Galvosūkiai</button>
+    </div>
+  </div>
 
+  <section id="pirmas" class="tab invisible block">
+    <h1>Nuo 0 iki 100</h1>
+    <p>Vienas mano mėgstamiausių strateginių žaidimų aspektų yra tai, kad jame tau niekas nieko neduoda - viską reikia surinkti ir sukurti pačiam. Šiuose žaidimuose žaidėjas pradeda su beveik niekuo, ir per laiką, per protingą planavimą ir pastangas, jis įgauna vis įdomesnių dalykų, tampa stipresniu, ir įtvirtina savo vietą žaidimo pasaulyje.</p>
+    <img src="app/images/img-1.jpg" alt="">
+    <img src="app/images/img-2-2.png" alt="">
+  </section>
+
+  <section id="antras" class="tab invisible">
+    <h1>Neribotos galimybės</h1>
+    <p>Antras svarbus strateginių žaidimų aspektas yra tai, kad juos nebutinai reikia žaisti vienu vieninteliu būdu. Dažniausiai nėra vienos krypties, kuri yra geriausia ir optimaliausia. Šiuose žaidimuose galima rinktis vis kitokį kelią, vis kitaip stengtis pasiekti savo tikslą, ir galima nuolatos keisti savo tikslus. Tokie žaidimai neverčia žaidėjo žaisti taip, kaip būtų skaitoma knyga, ir dažniausiai siųlo begales pasirinkimų visuose aspektuose.</p>
+    <img src="app/images/img-2.png" alt="">
+  </section>
+
+  <section id="trecias" class="tab invisible">
+    <h1>Galvosūkiai</h1>
+    <p>Trečias svarbus strateginių žaidimų aspektas yra juose esantys galvosūkiai, problemos, nenumatyti iššūkiai ir panašiai. Tokie žaidimai stipriai lavina žmogaus kritinio mąstymo sugebėjimus, kadangi žaidėją verčia nuolatos spręsti visokiausio tipo problemas. Neretai šios problemos iškyla vienu metu, ir žaidėjas privalo jas spręsti kartu, arba rizikuoja prarasti viską, ką iki šiol yra pasiekęs. Pastovus pavojus ir galimybė prarasti nemažą dalį to, ką jis yra pasiekęs, suteikia žaidimui daugiau prasmės, ir pasiekimai įgauna daugiau vertės.</p>
+    <img src="app/images/img-3.png" alt="">
+  </section>
+<script src="script.js"></script>
 </body>
 </html>
