@@ -9,7 +9,10 @@ body{
   Background: #213363;
   color: #D3D04F;
 
-  .tab{
+
+  }
+  .tab
+  {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +22,7 @@ body{
     width: 90%;
     margin: auto;
     margin-top: 20px;
+    
 
     img{
 
@@ -94,4 +98,13 @@ body{
       } 
   }
 
+.tab::before{
+  content: "..................";
+  height: fit-content;
+  font-size: 2em;
+}
+.tab::after{
+  content: "..................";
+  height: fit-content;
+  font-size: 2em;
 }
